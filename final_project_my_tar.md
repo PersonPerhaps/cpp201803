@@ -40,7 +40,7 @@ Your program will have to implement the following flags
     as the archive they are appended to, otherwise the resulting archive might
     be  unusable with non-GNU implementations of tar. Notice also that when
     more than one archive is given, the members from archives other than the
-    first one will be accessible in the resulting archive only if using the -i 
+    first one will be accessible in the resulting archive only if using the -i
     (--ignore-zeros) option.
 
     Compressed archives cannot be concatenated.
@@ -134,7 +134,8 @@ working, then each team member will see his personal score divided by 2.
 ## cheat
 
 ```
-"Cheating seems to be a relevant term only when one is caught in the act. Otherwise it is viewed as intelligence, no?"
+"Cheating seems to be a relevant term only when one is caught in the act.
+Otherwise it is viewed as intelligence, no?"
     — HK-47, Knights of the Old Republic
 ```
 
