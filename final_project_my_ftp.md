@@ -1,4 +1,4 @@
-my_tar
+my_ftp
 ======
 
 The goal of this project is to implement a ftp client in C++ only using

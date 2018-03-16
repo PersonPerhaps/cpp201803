@@ -1,5 +1,5 @@
-my_tar
-======
+my_http
+=======
 
 The goal of this project is to implement a http server in C++ only using the
 standard library.
