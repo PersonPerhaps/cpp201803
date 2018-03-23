@@ -9,7 +9,7 @@ Your folder should be called **session_3_ex** and MUST be **private**. Any
 public repository will be removed without notice. No need to tell you the score
 that goes with it.
 
-Your path will look like https://home.tuxlinuxien.com:9999/&lt;student id&gt;/session_3_ex
+Your path will look like https://home.tuxlinuxien.com:9999/ **student id** /session_3_ex
 
 Add a file called `.gitignore` at the root of your repository to make sure you 
 don't push unwanted files.
@@ -22,7 +22,7 @@ first cpp program.
 Output:
 
 ```
-$> ./a.ou
+$> ./a.out
 hello world!
 $>
 ```
@@ -36,7 +36,10 @@ on the following cpp file.
 ```
 // student_2.cpp
 #include <iostream>
+#include <string>
 #include "student_2.hpp"
+
+using namespace std;
 
 Student::Student(string first_name, string last_name) {
     this->first_name = first_name;
@@ -65,7 +68,7 @@ In a file **hello_3.cpp**, you will have to *implement* the `Hello` class based
 on the following hpp file.
 
 ```
-// hello_3.cpp
+// hello_3.hpp
 # ifndef __HELLO_HPP_
 # define __HELLO_HPP_
 
