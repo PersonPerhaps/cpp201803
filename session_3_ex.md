@@ -33,7 +33,10 @@ on the following cpp file.
 ```
 // student_2.cpp
 #include <iostream>
+#include <string>
 #include "student_2.hpp"
+
+using namespace std;
 
 Student::Student(string first_name, string last_name) {
     this->first_name = first_name;
