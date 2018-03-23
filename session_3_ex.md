@@ -14,6 +14,15 @@ Your path will look like https://home.tuxlinuxien.com:9999/ **student id** /sess
 Add a file called `.gitignore` at the root of your repository to make sure you
 don't push unwanted files.
 
+## files
+
+* main_1.cpp
+* student_2.hpp
+* hello_3.cpp
+* car_4.cpp
+* car_4.hpp
+* .gitignore
+
 ## ex 1
 
 in your repository, create a file **main_1.cpp** where you will implement your
