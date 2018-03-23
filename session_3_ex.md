@@ -5,11 +5,11 @@ in https://home.tuxlinuxien.com:9999/
 
 ## requirements
 
-Your folder should be called **session_3_md** and MUST be **private**. Any
+Your folder should be called **session_3_ex** and MUST be **private**. Any
 public repository will be removed without notice. No need to tell you the score
 that goes with it.
 
-Your path will look like https://home.tuxlinuxien.com:9999/<student id>/session_3_md
+Your path will look like https://home.tuxlinuxien.com:9999/&lt;student id&gt;/session_3_ex
 
 ## ex 1
 
