@@ -11,7 +11,7 @@ that goes with it.
 
 Your path will look like https://home.tuxlinuxien.com:9999/ **student id** /session_3_ex
 
-Add a file called `.gitignore` at the root of your repository to make sure you 
+Add a file called `.gitignore` at the root of your repository to make sure you
 don't push unwanted files.
 
 ## ex 1
@@ -46,16 +46,16 @@ Student::Student(string first_name, string last_name) {
     this->last_name = last_name;
 }
 
-Student::showFirstName() {
-    std::cout << this->first_name << std::endl;
+void Student::showFirstName() {
+    cout << this->first_name << endl;
 }
 
-Student::showLastName() {
-    std::cout << this->last_name << std::endl;
+void Student::showLastName() {
+    cout << this->last_name << endl;
 }
 
-Student::showFullName() {
-    std::cout << this->last_name << " " << this->first_name << std::endl;
+void Student::showFullName() {
+    cout << this->last_name << " " << this->first_name << endl;
 }
 ```
 
