@@ -16,8 +16,8 @@ don't push unwanted files.
 
 ## files
 
-* Infint.cpp
-* Infint.hpp
+* infint.cpp
+* infint.hpp
 * .gitignore
 
 ## exercise
@@ -50,7 +50,7 @@ Consider now the following program:
 // main.cpp
 
 #include <iostream>
-#include "Infint.hpp"
+#include "infint.hpp"
 
 int main() {
     Infint num = Infint();
@@ -60,7 +60,7 @@ int main() {
     num = num + 1;  // num is equal to "1"
     num += 1;       // num is equal to "2"
     num *= 5;       // num is equal to "10"
-    num -= 5;       // num is equal to "5"
+    num -= "5";     // num is equal to "5"
     num -= num;     // num is equal to "0"
 
 
@@ -82,14 +82,23 @@ $> 4
 ```
 
 
-Our number will have to be stored into a `string`. If you try to store it into
-any integer type it will work at the beginning  but if I try to insert a number
+Our number will have to be stored into a `string`. If we try to store it into
+any integer type it will work at the beginning  but if we try to insert a number
 with 2000 digits (ex: 12345[lot of more here]32432432 ) then we will have an
 overflow.
 
 To make it a bit easier, we will only support integers with the following
-operators `+`, `-`, `*`, `++`, `--`, `=`. Our `Infint` will be included in the
-range `0 <= Infint <= +inf`.
+operators 
+
+* `+`
+* `-`
+* `++`
+* `--`
+* `+=` 
+* `-=` 
+* `=` 
+
+Our `Infint` will be included in the `0 <= Infint <= +inf`.
 
 ## warnings
 
