@@ -81,11 +81,17 @@ $> ./a.out
 $> 4
 ```
 
-
 Our number will have to be stored into a `string`. If we try to store it into
 any integer type it will work at the beginning  but if we try to insert a number
 with 2000 digits (ex: 12345[lot of more here]32432432 ) then we will have an
 overflow.
+
+
+We will provide 3 constructor:
+
+* `Infint::Infint()` where the default value is "0"
+* `Infint::Infint(int)`
+* `Infint::Infint(std::string)`
 
 To make it a bit easier, we will only support integers with the following
 operators 
