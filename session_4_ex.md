@@ -93,7 +93,7 @@ We will provide 3 constructor:
 * `Infint::Infint(int)`
 * `Infint::Infint(std::string)`
 
-To make it a bit easier, we will only support integers with the following
+To make it a bit easier, we will only support the following
 operators
 
 * `+`
