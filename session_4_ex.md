@@ -59,7 +59,7 @@ int main() {
 
     num = num + 1;  // num is equal to "1"
     num += 1;       // num is equal to "2"
-    num *= 5;       // num is equal to "10"
+    num += "8";       // num is equal to "10"
     num -= "5";     // num is equal to "5"
     num -= num;     // num is equal to "0"
 
@@ -94,15 +94,15 @@ We will provide 3 constructor:
 * `Infint::Infint(std::string)`
 
 To make it a bit easier, we will only support integers with the following
-operators 
+operators
 
 * `+`
 * `-`
 * `++`
 * `--`
-* `+=` 
-* `-=` 
-* `=` 
+* `+=`
+* `-=`
+* `=`
 
 Our `Infint` will be included in the `0 <= Infint <= +inf`.
 
