@@ -102,9 +102,11 @@ operators
 * `--`
 * `+=`
 * `-=`
+* `*`
+* `*=`
 * `=`
 
-Our `Infint` will be included in the `0 <= Infint <= +inf`.
+Our `Infint` will be included in the `-inf <= Infint <= +inf`.
 
 ## warnings
 
