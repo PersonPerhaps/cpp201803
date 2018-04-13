@@ -1,4 +1,5 @@
-If your ID that list your score is set to 0/100.
+If your ID is int that list,
+your score is set to 0/100.
 
 16221252
 16301005
