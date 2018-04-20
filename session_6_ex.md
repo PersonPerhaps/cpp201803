@@ -160,8 +160,7 @@ We will have to implement the method `action()` which will print
 The `BlackBird` class will inherit from a `Vehicle`. The constructor will have
 to be like `BlackBird::BlackBird()`.
 
-We will have to implement the method `action
-()` which will print
+We will have to implement the method `action()` which will print
 `On my way guys! OVER\n`
 
 ## Sniper
