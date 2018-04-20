@@ -88,7 +88,7 @@ None
 
 * `public int Vehicle::countSoldier() = 0` returns the number of soldier
 in the vehicle.
-* `public virtual void Vehicle::do() = 0`
+* `public virtual void Vehicle::action() = 0`
 * `public void Vehicle::addSoldier(Soldier *)` add a soldier to our vehicule.
 * `public std::vector<Soldier*> Vehicle::unload()` will return a `vector` of
 soldiers and set the number of soldiers back to **0**
@@ -151,7 +151,7 @@ to **5** automatically.
 The `Jeep` class will inherit from a `Vehicle`. The constructor will have to be
 `Jeep::Jeep()`.
 
-We will have to implement the method `do()` which will print
+We will have to implement the method `action()` which will print
 `Fast and Furious sucks\n`
 
 ## BlackBird
@@ -159,7 +159,8 @@ We will have to implement the method `do()` which will print
 The `BlackBird` class will inherit from a `Vehicle`. The constructor will have
 to be like `BlackBird::BlackBird()`.
 
-We will have to implement the method `do()` which will print
+We will have to implement the method `action
+()` which will print
 `On my way guys! OVER\n`
 
 ## Sniper
