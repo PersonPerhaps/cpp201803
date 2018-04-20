@@ -86,7 +86,7 @@ None
 
 #### methods
 
-* `public int Vehicle::countSoldier() = 0` returns the number of soldier
+* `public int Vehicle::countSoldier()` returns the number of soldier
 in the vehicle.
 * `public virtual void Vehicle::action() = 0`
 * `public void Vehicle::addSoldier(Soldier *)` add a soldier to our vehicule.
@@ -101,6 +101,7 @@ soldiers and set the number of soldiers back to **0**
 
 #### methods
 
+* `Soldier::Soldier(string name, string rank)`
 * `public void Soldier::scream()` will print `AAAAHHH\n`
 * `public virtual void Soldier::identification()` will print
 `<rank> <solider_name> Sir!\n`
