@@ -29,11 +29,18 @@ will combine them to this exercise too.
 Here is the list of methods that you will have to implement:
 
 ```c++
-// my_list_interface.hpp
-// Your MyList class will have inherit from this class.
-// you can add this file for testing but it should not be pushed.
-template<class T> class MyListInterface<type T> {
+// my_list.hpp
+
+template<class T> class MyList {
+private:
+    T* items; // an array of items.
 public:
+    MyList();
+    ~MyList();
+    operator+=(&T); // Adds a new item at the end.
+    operator+(&T); // Adds a new item at the beginning.
+    operator+(MyList<T> &l); // append the content of "l" at the end of your list.
+    operator=(MyList<T> &l); // copy the list "l" into your list and removes the existing items.
     T& front() = 0;     // Returns reference to the first element in the list
     T& back() = 0;       // Returns reference to the last element in the list
     push_front(T&) = 0;    // Adds a new element ‘g’ at the beginning of the list
@@ -47,22 +54,6 @@ public:
     erase(int pos, &t) = 0;   // Removes a single element or a range of elements from the list
     reverse() = 0;            // Reverses the list
     const size_t size() = 0;  //Returns the number of elements in the list
-};
-```
-
-```c++
-// my_list.hpp
-
-template<class T> class MyList: public MyListInterface<T> {
-private:
-    []T items;
-public:
-    MyList();
-    ~MyList();
-    operator+=(&T); // Adds a new item at the end.
-    operator+(&T); // Adds a new item at the beginning.
-    operator+(MyList<T> &l); // append the content of "l" at the end of your list.
-    operator=(MyList<T> &l); // copy the list "l" into your list and removes the existing items.
 
 };
 ```
