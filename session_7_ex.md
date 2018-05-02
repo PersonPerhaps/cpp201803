@@ -18,7 +18,7 @@ don't push unwanted files.
 ## required files
 
 * my_list.hpp
-* m_list.cpp
+* my_list.cpp
 
 ## My list
 
@@ -47,11 +47,11 @@ public:
     push_back(T&);     // Adds a new element ‘g’ at the end of the list
     T& pop_front();    // Removes the first element of the list, and reduces size of the list by 1
     T& pop_back();     // Removes the last element of the list, and reduces size of the list by 1
-    T& begin();     // Returns an iterator pointing to the first element of the list
-    T& end();       // Returns an iterator pointing to the theoretical last element which follows the last element
+    T* begin();     // Returns an iterator pointing to the first element of the list
+    T* end();       // Returns an iterator pointing to the theoretical last element which follows the last element
     bool empty();   // Returns whether the list is empty(1) or not(0)
     insert(int pos, &T);  // Inserts new elements in the list before the element at a specified position
-    erase(int pos, &t);   // Removes a single element or a range of elements from the list
+    erase(int pos);   // Removes a single element at a position
     reverse();            // Reverses the list
     size_t size();  //Returns the number of elements in the list
 
