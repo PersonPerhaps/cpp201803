@@ -41,14 +41,14 @@ public:
     operator+(&T); // Adds a new item at the beginning.
     operator+(MyList<T> &l); // append the content of "l" at the end of your list.
     operator=(MyList<T> &l); // copy the list "l" into your list and removes the existing items.
-    T& front();     // Returns reference to the first element in the list
-    T& back();       // Returns reference to the last element in the list
-    push_front(T&);    // Adds a new element ‘g’ at the beginning of the list
-    push_back(T&);     // Adds a new element ‘g’ at the end of the list
-    T& pop_front();    // Removes the first element of the list, and reduces size of the list by 1
-    T& pop_back();     // Removes the last element of the list, and reduces size of the list by 1
-    T* begin();     // Returns an iterator pointing to the first element of the list
-    T* end();       // Returns an iterator pointing to the theoretical last element which follows the last element
+    T front();     // Returns reference to the first element in the list
+    T back();       // Returns reference to the last element in the list
+    push_front(T& g);    // Adds a new element ‘g’ at the beginning of the list
+    push_back(T& g);     // Adds a new element ‘g’ at the end of the list
+    T pop_front();    // Removes the first element of the list, and reduces size of the list by 1
+    T pop_back();     // Removes the last element of the list, and reduces size of the list by 1
+    T* begin();     // Returns a pointer of the first element of the list
+    T* end();       // Returns a pointer of the last element of the list
     bool empty();   // Returns whether the list is empty(1) or not(0)
     insert(int pos, &T);  // Inserts new elements in the list before the element at a specified position
     erase(int pos);   // Removes a single element at a position
