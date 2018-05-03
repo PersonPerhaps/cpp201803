@@ -41,6 +41,7 @@ public:
     operator+(&T); // Adds a new item at the beginning.
     operator+(MyList<T> &l); // append the content of "l" at the end of your list.
     operator=(MyList<T> &l); // copy the list "l" into your list and removes the existing items.
+    &T operator[](int)  // returns an item located at a desired position.
     T front();     // Returns a copy of the first element in the list
     T back();       // Returns a copy of the last element in the list
     push_front(T& g);    // Adds a new element ‘g’ at the beginning of the list
