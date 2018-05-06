@@ -37,11 +37,11 @@ private:
 public:
     MyList();
     ~MyList();
-    operator+=(&T); // Adds a new item at the end.
-    operator+(&T); // Adds a new item at the beginning.
-    operator+(MyList<T> &l); // append the content of "l" at the end of your list.
-    operator=(MyList<T> &l); // copy the list "l" into your list and removes the existing items.
-    &T operator[](int)  // returns an item located at a desired position.
+    operator+=(T&); // Adds a new item at the end.
+    operator+(T&); // Adds a new item at the beginning.
+    operator+(MyList<T> l&); // append the content of "l" at the end of your list.
+    operator=(MyList<T> l&); // copy the list "l" into your list and removes the existing items.
+    T& operator[](int)  // returns an item located at a desired position.
     T front();     // Returns a copy of the first element in the list
     T back();       // Returns a copy of the last element in the list
     push_front(T& g);    // Adds a new element ‘g’ at the beginning of the list
@@ -51,7 +51,7 @@ public:
     T* begin();     // Returns a pointer of the first element of the list
     T* end();       // Returns a pointer of the last element of the list
     bool empty();   // Returns whether the list is empty(1) or not(0)
-    insert(int pos, &T);  // Inserts new elements in the list before the element at a specified position
+    insert(int pos, T&);  // Inserts new elements in the list before the element at a specified position
     erase(int pos);   // Removes a single element at a position
     reverse();            // Reverses the list
     size_t size();  //Returns the number of elements in the list
