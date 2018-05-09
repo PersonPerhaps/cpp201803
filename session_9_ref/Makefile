@@ -6,10 +6,10 @@ OBJS = main.o
 all: $(EXEC)
 
 $(EXEC): $(OBJS)
-	$(CC) $(CC_FLAGS) $(OBJS) -o $(EXEC)
+	$(CC) $(CC_FLAGS) $(OBJS) -o $@
 
 main.o: main.cpp
-	$(CC) $(CC_FLAGS) -c -o main.o main.cpp
+	$(CC) $(CC_FLAGS) -c -o $@ main.cpp
 
 clean:
 	rm -rf $(OBJS) $(EXEC)
