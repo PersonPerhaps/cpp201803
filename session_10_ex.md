@@ -24,7 +24,7 @@ don't push unwanted files.
 
 ## project
 
-The goal of this project will be to implement as server AND a client in C++
+The goal of this project will be to implement a server AND a client in C++
 using TCP/IP. Even if we will be using C libraries, our implementation
 will be achieved with C++.
 
