@@ -47,8 +47,8 @@ private:
 
 * `Server(const int, FILE&)` will create a new server socket.
 * `~Server()` will close the server socket.
-* `run()` will wait for a client indefinitely. This method can be exited when
-the client stop sending data.
+* `run()` will wait for a client indefinitely. This method only exits when
+the client stops sending data.
 
 The server will listen on all the network interfaces -> `0.0.0.0`
 
