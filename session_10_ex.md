@@ -34,7 +34,7 @@ Our server class doesn't need to support multiple users. The server will
 however have to wait for a client to connect, receive data, and write it down
 to a file.
 
-```
+```c++
 class Server {
 public:
     Server(const int port, FILE &out_file);
@@ -57,7 +57,7 @@ The server will listen on all the network interfaces -> `0.0.0.0`
 Our client will have to create a one-shot socket to a server, send a file, then
 shut itself down properly.
 
-```
+```c++
 class Client {
 public:
     Client(const string host, const int port, FILE &in_file);
@@ -94,7 +94,7 @@ to break.
 ## info
 
 We will have to make sure that we don't have any memory leak. Any allocated
-memory MUST be freed. 
+memory MUST be freed.
 
 Your any socket opened MUST be closed.
 
