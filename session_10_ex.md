@@ -37,7 +37,7 @@ to a file.
 ```c++
 class Server {
 public:
-    Server(const int port, FILE &out_file);
+    Server(const int port, ofstream &out_file);
     ~Server();
     void run();
 private:
@@ -45,7 +45,7 @@ private:
 }
 ```
 
-* `Server(const int, FILE&)` will create a new server socket.
+* `Server(const int, ofstream &)` will create a new server socket.
 * `~Server()` will close the server socket.
 * `run()` will wait for a client indefinitely. This method only exits when
 the client stops sending data.
@@ -60,7 +60,7 @@ shut itself down properly.
 ```c++
 class Client {
 public:
-    Client(const string host, const int port, FILE &in_file);
+    Client(const string host, const int port, ifstream &in_file);
     ~Client();
     void send();
 private:
@@ -68,7 +68,7 @@ private:
 }
 ```
 
-* `Client(const string, const int, FILE &);` will create the socket to a
+* `Client(const string, const int, ifstream &);` will create the socket to a
 desired server named by it **host** and **port**.
 * `~Client()` will close the socket to the server.
 * `send()` will read the file **in_file** and send all the content to the
