@@ -62,7 +62,7 @@ class Client {
 public:
     Client(const string host, const int port, ifstream &in_file);
     ~Client();
-    void send();
+    void senddata();
 private:
     // anything you need to make it work.
 }
@@ -71,7 +71,7 @@ private:
 * `Client(const string, const int, ifstream &);` will create the socket to a
 desired server named by it **host** and **port**.
 * `~Client()` will close the socket to the server.
-* `send()` will read the file **in_file** and send all the content to the
+* `senddata()` will read the file **in_file** and send all the content to the
 server.
 
 ### error management
@@ -79,11 +79,11 @@ server.
 We know that network programming is a source of error.
 
 If the server cannot bind a given port, the server constructor will have to
-throw an exception type `const char *` which says `bind error 9999` where
+throw an exception type `const std::string` which says `bind error 9999` where
 `9999` will have to be replaced by the port given in parameter.
 
 If the client cannot connect to a server, the client constructor will have to
-throw an exception type `const char *` which says
+throw an exception type `const std::string` which says
 `connect error 127.0.0.1:9999` where `127.0.0.1` and `9999` are the host and
 port given in parameter.
 
